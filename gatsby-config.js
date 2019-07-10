@@ -13,8 +13,20 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: '@fika/gatsby-source-cockpit',
+      options: {
+        token: 'account-1142d48df3d0b4a30e41256b5aa31b',
+        baseUrl: 'http://206.189.119.128',
+        locales: [],
+        collections: [],
+        brokenImageReplacement: null
+     },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-layout`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

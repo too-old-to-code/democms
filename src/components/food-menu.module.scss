@@ -1,0 +1,55 @@
+.item-price {
+  min-width: 120px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: right;
+}
+
+.item-name {
+  font-size: 14px;
+  margin: 0;
+}
+
+.food-menu {
+  margin: 4px;
+  text-align: center;
+}
+
+.item-description {
+  color: #595d6d;
+}
+
+.menu-item {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 4px;
+  padding-top: 6px;
+  background-color: #f1f1f1;
+
+  &.even {
+    background-color: beige;
+  }
+}
+
+.menu-section {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  .heading {
+    display: inline-block;
+    padding: 15px 0px;
+    background: #f8c40e;
+    color: rgb(253, 247, 229);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 3px black;
+    width: 100%;
+    margin: 3px 0;
+    text-shadow: 0px 1px 2px black;
+    font-size: 1.1em;
+    position: relative;
+  }
+
+}

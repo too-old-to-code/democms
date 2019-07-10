@@ -1,0 +1,68 @@
+.pure-menu:not(.pure-menu-horizontal) {
+  padding-top: 50px;
+  background-color: #222f3e;
+  color: #576574;
+  opacity: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  top: 0;
+  transform: translateX(-100%);
+  transition: transform .2s;
+  font-size: 1.3em;
+
+  .pure-menu-link {
+    &:hover, &:focus {
+      background-color: #222f3e;
+    }
+  }
+}
+
+.pure-menu-list {
+  padding-top: 40px;
+}
+
+.pure-menu.is-active {
+  transform: translateX(0);
+  transition: transform .2s;
+}
+
+.pure-menu-horizontal {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 35.5em) {
+  .pure-menu:not(.pure-menu-horizontal) {
+    display: none !important;
+  }
+
+  .pure-menu-horizontal {
+    display: inherit;
+    position: absolute;
+    z-index: 30;
+    top: 20px;
+    text-align: center;
+    font-size: 1em;
+
+    .pure-menu-link {
+      transition: transform .2s;
+      color: black;
+      letter-spacing: 1px;
+      font-weight: bold;
+      &:hover, &:active, &:focus {
+        // font-weight: bold;
+        transform: scale(1.2);
+        background-color: inherit;
+      }
+    }
+
+  }
+}
+
+// Color of the currently active link
+.selected-link {
+  color: white !important;
+}
